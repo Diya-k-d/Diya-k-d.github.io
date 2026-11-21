@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diya K D | AI / GenAI Engineer</title>
+  <meta name="description" content="Portfolio of Diya K D, an AI/GenAI engineer in Hyderabad specializing in RAG pipelines, LLM evaluation, Python and FastAPI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       QUICK EDIT: StudyCompanion live demo link.
+       When the Streamlit app is deployed, replace the URL below.
+       It is used for every "Live Demo" button on this page.
+       ============================================================ -->
+  <script>
+    const STUDYCOMPANION_URL = "https://studycompanion-hpwdctkw6u2suafirdg6fs.streamlit.app";
+  </script>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Diya K D</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/Diya_K_D_Resume.pdf" class="btn btn-small" download>Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="hero-eyebrow">Hyderabad, India</p>
+      <h1>Hi, I'm Diya K D.</h1>
+      <p class="hero-sub">AI / GenAI Engineer. I build and evaluate LLM systems: RAG pipelines, prompt engineering, and AI quality work across text, image, audio and video.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="assets/Diya_K_D_Resume.pdf" class="btn btn-ghost" download>Download resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Diya-k-d" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/diya-k-d" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:diyakd2772@gmail.com">diyakd2772@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <p class="lead">I'm an AI engineer with 2+ years of professional experience building Python backends, LLM-powered applications and RAG pipelines, on top of a one-year research internship in deep learning.</p>
+          <div>
+            <p>I currently work with Innodata as a freelance AI Data Quality &amp; Annotation Analyst, reviewing and annotating AI-generated content across text, image, audio and video, and with Handshake AI as a Physics Expert, designing graduate-level reasoning tasks that stress-test large language models.</p>
+            <p>Before that, I was a full-time AI Quality Analyst at Innodata evaluating LLM responses for factual accuracy, reasoning quality and hallucinations, and a Data Operations Executive at ALLEN Digital, where I built a Python and API-integrated workflow that published 3,500+ files and was adopted by senior colleagues.</p>
+            <p>I hold an M.Sc. in Physics, and I like working across the whole pipeline: embeddings and vector search, FastAPI backends, and the evaluation loops that make LLM output trustworthy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-featured card">
+          <div class="card-body">
+            <div class="project-tags">
+              <span>Python</span><span>Streamlit</span><span>Phi-3 Mini</span><span>Sentence Transformers</span><span>FAISS</span>
+            </div>
+            <h3>StudyCompanion · Local RAG Document Q&amp;A</h3>
+            <p>An AI study assistant that lets students upload PDF notes and ask questions about them. Retrieves the relevant sections with semantic search and generates clear, context-grounded explanations with a local language model · no paid API required.</p>
+            <ul>
+              <li>Full RAG pipeline: PDF extraction, chunking, embeddings, FAISS similarity retrieval, structured prompts</li>
+              <li>Session-specific vector indexes keep documents from mixing; the model is cached for fast repeated use</li>
+              <li>Multiple chat sessions with a clean Streamlit interface</li>
+            </ul>
+            <div class="card-links">
+              <a class="btn btn-small live-demo" href="#" target="_blank" rel="noopener">Live demo</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/StudyCompanion" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid">
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>LangGraph</span><span>LLM Evaluation</span>
+              </div>
+              <h3>Self-Evaluating Lesson Generator</h3>
+              <p>An agentic system that generates a beginner lesson, grades it against a rubric of hard pass/fail checks, and regenerates with feedback until it clears the bar · built as an explicit LangGraph state machine.</p>
+              <ul>
+                <li>Evaluation grounded in a fixed human-written reference, not the model's own memory</li>
+                <li>Deterministic Flesch-Kincaid readability backstop, implemented dependency-free</li>
+                <li>Persistent memory of past failures corrects recurring mistakes across runs</li>
+              </ul>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/nxtwave-rag-lesson" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>Pydantic</span>
+              </div>
+              <h3>Finance Backend API</h3>
+              <p>A REST API for personal finance records: user management, transaction CRUD, filtering by type, category and date range, and dashboard summaries for income, expenses and balance.</p>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/finance-backend" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>TensorFlow/Keras</span><span>PyTorch</span><span>Signal Processing</span>
+              </div>
+              <h3>Audio Noise Reduction · ML &amp; Signal Processing</h3>
+              <p>Compared LMS adaptive filtering, Wiener filtering and neural approaches (CNNs, LSTMs) for audio denoising, assessed with MSE and SNR, including hybrid Wiener + neural-network methods.</p>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/audio-noise-reduction-ml" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>Binance API</span><span>CLI</span>
+              </div>
+              <h3>Binance Trading Bot</h3>
+              <p>A CLI trading bot for Binance Futures Testnet placing MARKET and LIMIT orders, with structured logging, input validation and a modular architecture.</p>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/binance-trading-bot" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>Pandas</span><span>Data Analysis</span>
+              </div>
+              <h3>Trader Performance vs Market Sentiment</h3>
+              <p>Data science analysis of trader performance against Bitcoin market sentiment, combining Hyperliquid trading data with the Fear &amp; Greed index.</p>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/Trader-Performance-vs-Market-Sentiment-Analysis" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="project-tags">
+                <span>Python</span><span>NLP</span><span>Data Tagging</span>
+              </div>
+              <h3>Data Tagging from Text</h3>
+              <p>Structured tagging of technical complaint records, mapping free-text fields to a predefined taxonomy of categories.</p>
+              <div class="card-links">
+                <a class="btn btn-small btn-ghost" href="https://github.com/Diya-k-d/data-tagging-from-text" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="more-link"><a href="https://github.com/Diya-k-d?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a></p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-when">Oct 2026 – Present · Remote</div>
+            <h3>Senior Associate · AI Quality Analyst / Physics SME (Freelance)</h3>
+            <p class="timeline-org">Innodata</p>
+            <ul>
+              <li>Review and annotate AI-generated content across video, audio, text and image for quality, accuracy and guideline adherence</li>
+              <li>Identify errors, inconsistencies and low-quality multimodal outputs, delivering structured feedback for model evaluation</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-when">Jul 2026 – Present · Remote</div>
+            <h3>Physics Expert · AI Trainer (Freelance)</h3>
+            <p class="timeline-org">Handshake AI</p>
+            <ul>
+              <li>Design graduate-level physics prompts and multi-step reasoning tasks that expose failure modes in large language models</li>
+              <li>Evaluate AI outputs for conceptual accuracy, mathematical rigor and logical consistency; prepare reference solutions</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-when">Jan 2026 – Sep 2026 · Remote</div>
+            <h3>Senior Associate · AI Quality Analyst / Physics SME</h3>
+            <p class="timeline-org">Innodata Pvt Ltd</p>
+            <ul>
+              <li>Evaluated AI-generated responses and datasets for factual accuracy, reasoning quality and consistency; identified hallucinations and logical errors</li>
+              <li>Verified mathematical derivations, numerical answers and LaTeX technical content for model evaluation workflows</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-when">Sep 2024 – Jun 2026 · Bengaluru</div>
+            <h3>Data Operations Executive (Consultant)</h3>
+            <p class="timeline-org">ALLEN Digital</p>
+            <ul>
+              <li>Independently built a Python and API-integrated workflow that published 3,500+ 3D assets and revision-note files to the ALLEN learning app; adopted by senior colleagues</li>
+              <li>Added upload validation, duplicate checks, retries and error logging; used OCR, digitization and AI-assisted file generation</li>
+              <li>Created interactive GeoGebra simulations and animated science-learning resources; later took on team-lead responsibilities</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-when">Jan 2023 – Jan 2024 · Bengaluru</div>
+            <h3>Research Project Intern</h3>
+            <p class="timeline-org">M.S. Ramaiah University of Applied Sciences</p>
+            <ul>
+              <li>Researched neural adaptive control and deep learning for signal denoising: preprocessing, feature extraction, dataset preparation</li>
+              <li>Trained and compared neural-network approaches using MSE and SNR, with performance visualizations and reports</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <h2 class="education-heading">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-when">2022 – 2024</div>
+            <h3>M.Sc. Physics</h3>
+            <p class="timeline-org">St Joseph's University, Bengaluru · Computational Physics, Machine Learning, Statistical Physics, Signal Processing</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-when">2019 – 2022</div>
+            <h3>B.Sc. Physics</h3>
+            <p class="timeline-org">St Xavier's College for Women, Aluva</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Generative AI &amp; NLP</h3>
+            <div class="chips">
+              <span>RAG</span><span>Prompt engineering</span><span>LLM evaluation</span><span>Hugging Face Transformers</span><span>Sentence Transformers</span><span>Phi-3 Mini</span><span>LangGraph</span><span>FAISS</span><span>Embeddings</span><span>Semantic search</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Backend &amp; Tools</h3>
+            <div class="chips">
+              <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>SQLAlchemy</span><span>SQLite</span><span>Pydantic</span><span>Streamlit</span><span>Git</span><span>Jupyter</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Data</h3>
+            <div class="chips">
+              <span>SQL</span><span>NumPy</span><span>Pandas</span><span>Data preprocessing</span><span>Data pipelines</span><span>OCR</span><span>API integration</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Machine Learning</h3>
+            <div class="chips">
+              <span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Neural networks</span><span>CNNs</span><span>LSTMs</span><span>Model evaluation</span><span>Signal processing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2>Get in touch</h2>
+        <p>I'm looking for AI/ML, GenAI and data science roles in Hyderabad (hybrid) or remote. The fastest way to reach me is email.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="mailto:diyakd2772@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/diya-k-d" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="assets/Diya_K_D_Resume.pdf" download>Resume (PDF)</a>
+        </div>
+        <p class="contact-meta">Hyderabad, Telangana, India · +91 9946210796 · <a href="https://github.com/Diya-k-d" target="_blank" rel="noopener">github.com/Diya-k-d</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Diya K D · Built with plain HTML/CSS, hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    // Point every "Live demo" button at the StudyCompanion URL set above.
+    document.querySelectorAll(".live-demo").forEach(function (el) {
+      el.href = STUDYCOMPANION_URL;
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+            </html>
